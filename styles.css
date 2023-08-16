@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=PT+Serif:ital,wght@1,700&display=swap');
+/* font family oswald, san-serif */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #ff004478;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.navlink {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.navlink li a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.navlink li a {
+    color: black;
+}
+
+.portada {
+    width: 100%;
+    height: 250px;
+    background-image: url(./imagenes/capcakesflores.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px #fff;
+    text-align: center;
+}
+
+p,
+h2 {
+    text-align: center;
+}
+
+.seccion1,
+.seccion2,
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.seccion1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.seccion3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    background-color: #ff004478;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (min-width: 480px) and (max-width:768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .navlink {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-shadow: 4px 4px 5px #fff;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .seccion1 img,
+    .seccion3 img {
+        height: 280px;
+    }
+
+    @media (min-width: 769px) and (max-width:1024px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .navlink {
+        justify-content: space-evenly;
+    }
+
+    .navlink li a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-shadow: 4px 4px 5px #fff;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .portada {
+        height: 550px;
+    }
+
+    .seccion1 {
+        display: flex;
+    }
+
+    .foto1 {display: flex;
+        height: 450px;
+    }
+
+    .foto1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .seccion2{
+    display: flex;
+    width: auto;
+    }
+    
+    .fotos2 {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        gap: 20px;
+    } 
+
+    .fotos2 img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .Contacto {
+         gap: 80px;
+    }
+
+    @media (min-width: 1025px) and (max-width:1200px) {
+    
+        .navlink li a {
+            font-size: 5 rem;
+        }
+    
+        h1 {
+            font-size: 9rem;
+            text-shadow: 8px 8px 6px #fff;
+        }
+    
+        p {
+            font-size: 7rem;
+        }
+    
+        h2 {
+            font-size: 8rem;
+        }
+    
+        .portada {
+            height: 100%;
+        }
+    
+        .seccion1 {
+            display: flex;
+            height: 400px; ;
+        }
+    
+        .foto1 {display: flex;
+            height: 700px;
+        }
+    
+        .foto1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .seccion2{
+        display: flex;
+        height: 500px; 
+        }
+        
+        .fotos2 {
+            display: flex;
+            height: 700%;
+        } 
+    
+        .fotos2 img {
+            width: 100%;
+            height: 100%;
+        }
+        .seccion3 img {
+            height: 800px;
+            display: flex;
+        }
+        
+        .Contacto {
+             gap: 90px;
+        }
